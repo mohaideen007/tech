@@ -1,0 +1,104 @@
+/* Apply to body if full page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e0e7ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container with subtle animation */
+.form-container {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.homework-form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #374151;
+  font-size: 26px;
+}
+
+/* Label styling */
+.homework-form label {
+  display: block;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+/* Input + textarea base styles */
+.homework-form input,
+.homework-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus state */
+.homework-form input:focus,
+.homework-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+}
+
+/* Textarea resize control */
+.homework-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit button */
+.homework-form button {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 20px;
+  background: linear-gradient(to right, #6366f1, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.homework-form button:hover {
+  background: linear-gradient(to right, #4f46e5, #4338ca);
+  transform: translateY(-2px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+}
