@@ -58,10 +58,7 @@ Make sure MySQL is running.
 Update application.properties with your DB credentials.
 
 
-
-2. Frontend (React)
-
-
+### 2. Frontend (React)
 bash
 Copy
 Edit
